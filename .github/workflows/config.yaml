@@ -13,8 +13,8 @@ jobs:
     - name: Build Jekyll site
       uses: actions/jekyll-build-pages@v1
       with:
-        source: cd /usr/local/./
-        destination: cd /usr/local/./_site
+        source: cd /usr/local/bin/
+        destination: cd /usr/local/bin/_site
       #run: cd /usr/local/bin && sudo bundle exec jekyll build
     - name: Creating version.txt
       run: cd _gh_pages && cat version.txt > ${{ github.run_number }}
